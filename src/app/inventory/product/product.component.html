@@ -1,0 +1,26 @@
+<body>
+    <br>
+    <h1> Welcome to XYZ Inventory!</h1>
+    <input type="button" value="View Products" class="btn" (click) = "getProducts()">
+    
+    <hr>
+    <form id="addprodform">
+        <fieldset>
+            <legend>ADD PRODUCT</legend>
+            <input type="text" placeholder="Enter Product Name" class="text-field" name="productName" id="productName" [(ngModel)] = "product.productName">
+            <input type="text" placeholder="Enter Product Category" class="text-field" name="category" id="category" [(ngModel)] = "product.category">
+        <br>
+        <input type="submit" value="Add Product" class="btn" id="submit-btn" (click)="addProduct()">
+    </fieldset>
+    </form>
+    <br>
+    <form>
+        UPLOAD PRODUCT IMAGE <br>
+        <input type="file" name="image" id="image" [(ngModel)] = "image.image" >
+        <input type="submit" value="Upload" class="btn" id="submit-btn"  (click)="saveImage()">
+    </form>
+    <h4>{{productMessage}}</h4>
+    <hr>
+
+   
+</body>

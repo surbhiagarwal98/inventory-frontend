@@ -1,0 +1,27 @@
+.btn{
+    background-color: #9fd3e0;
+    border: none;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    transition: 0.2s;
+    background-color: #2693a7;
+    color: white;
+    cursor: pointer;
+}
+
+#submit-btn{
+    background-color: tomato;
+}
+
+.text-field{
+    border: none;
+    background-color: beige;
+    color: black;
+    padding: 5px;
+    margin: 8px;
+}
+
